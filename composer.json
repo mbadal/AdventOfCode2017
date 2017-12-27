@@ -1,0 +1,17 @@
+{
+    "name": "mbadal/advent-of-code2017",
+    "authors": [
+        {
+            "name": "Matej Bádal",
+            "email": "matejbadal@gmail.com"
+        }
+    ],
+    "require": {
+        "composer/composer": "^1.5"
+    },
+	"autoload": {
+		"psr-4": {
+			"AdventOfCode\\": "src/AdventOfCode"
+		}
+	}
+}
