@@ -16,3 +16,19 @@ foreach ($fileContent as $row) {
 }
 
 echo $result, "\n";
+$result = 0;
+foreach ($fileContent as $row) {
+    foreach ($row as $item) {
+        foreach ($row as $compareItem) {
+            if ($compareItem <= $item) {
+                continue;
+            }
+
+            if ((int)$compareItem % (int)$item === 0) {
+                $result+= $compareItem / $item;
+                break;
+            }
+        }
+    }
+}
+echo $result, "\n";
